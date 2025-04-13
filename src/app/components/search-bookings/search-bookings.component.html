@@ -1,0 +1,14 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+  <label>Vendor</label>
+  <input formControlName="vendor" type="text" />
+
+  <label>From</label>
+  <input formControlName="from" type="date" />
+
+  <label>Until</label>
+  <input formControlName="until" type="date" />
+
+  <button type="submit">Search</button>
+</form>
+
+<app-booking-table [columns]="columns" [data]="tableData"></app-booking-table>
