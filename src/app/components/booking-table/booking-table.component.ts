@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-booking-table',
   imports: [
     NgIf,

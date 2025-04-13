@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 
@@ -6,9 +6,9 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class BookingServiceService {
-  constructor(private http: HttpClient) {}
+  constructor(private httpClient: HttpClient) {}
 
   searchBookings(filters: any): Observable<any> {
-    return this.http.post('/api/bookings/search', filters); // Adjust API as needed
+    return this.httpClient.post('/api/bookings/search', filters); // Adjust API as needed
   }
 }
