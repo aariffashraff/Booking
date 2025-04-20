@@ -1,0 +1,36 @@
+<div *ngIf="bookings.length > 0" class="table-responsive mt-4">
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>ID</th>
+      <th>Created On</th>
+      <th>Guest</th>
+      <th>Vendor</th>
+      <th>Check In</th>
+      <th>Check Out</th>
+      <th>Nights</th>
+      <th>Guests</th>
+      <th>Room Type</th>
+      <th>Room</th>
+      <th>Financial</th>
+      <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let booking of bookings">
+      <td>{{ booking.id }}</td>
+      <td>{{ booking.createdOn }}</td>
+      <td>{{ booking.guest }}</td>
+      <td>{{ booking.vendor }}</td>
+      <td>{{ booking.checkIn }}</td>
+      <td>{{ booking.checkOut }}</td>
+      <td>{{ booking.nights }}</td>
+      <td>{{ booking.guests }}</td>
+      <td>{{ booking.roomType }}</td>
+      <td>{{ booking.room }}</td>
+      <td>{{ booking.financial }}</td>
+      <td>{{ booking.notes }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
